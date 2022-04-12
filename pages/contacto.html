@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../assets/img/favicon-32x32.png">
+	<title>Trabajo entregable</title>
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<!-- FONT OSWALD -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+	<div class="container">
+		<header class="header">
+			<img src="../assets/img/zapatillas.png" alt="Logo Zapatilla" class="header__img">
+			<h1 class="header__txt">EMPRESA</h1>
+			<label for="search"></label>
+			<input type="text" id="search" placeholder="Buscador..." class="header__search">
+
+			<ul class="header__nav__menu--right">
+				<li>
+					<a href="#">
+						<i class="fa-solid fa-cart-shopping"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<input type="button" value="MI CUENTA" class="header__myAccount">
+					</a>
+				</li>
+			</ul>
+		</header>
+		<div class="nav__container">
+			<nav class="header__nav">
+				<ul class="header__nav__menu">
+					<li><a href="../index.html">INICIO</a></li>
+					<li><a href="../pages/categorias.html">CATEGORÍAS</a></li>
+					<li><a href="../pages/ofertas.html">OFERTAS</a></li>
+					<li><a href="../pages/contacto.html">CONTACTO</a></li>
+					<li><a href="../pages/ubicacion.html">UBICACIÓN</a></li>
+				</ul>
+			</nav>
+		</div>
+		<main class="main__form">
+			<div class="titulos">
+				<strong>CONTÁCTENOS</strong>
+			</div>
+			<section>
+				<form action="#" class="form">
+					<div class="form__field--left">
+						<label for="nombre" class="label">Nombre:</label>
+						<input type="text" placeholder="Nombre" name="nombre" class="form__field">
+
+					</div>
+					<div class="form__field--right">
+						<label for="apellido" class="label">Apellido:</label>
+						<input type="text" placeholder="Apellido" name="apellido" class="form__field">
+					</div>
+					<div class="form__field--left">
+						<label for="email" class="label">Mail:
+							<input type="email" placeholder="micorreo@gmail.com" name="email" class="form__field">
+						</label>
+					</div>
+					<div class="form__field--right">
+						<label for="telefono" class="label">Teléfono:</label>
+						<input type="tel" placeholder="Teléfono" name="telefono" class="form__field">
+					</div>
+					<div class="form__field--left">
+						<label for="asunto" class="label">Asunto:</label>
+						<select name="asunto" id="asunto" class="form__field">
+							<option value="1">Tuve un problema con el producto</option>
+							<option value="2">No puedo realizar la compra online</option>
+							<option value="3">Consulta de talles</option>
+							<option value="4">Otro</option>
+						</select>
+					</div>
+					<div class="form__field--right">
+						<label for="comentario" class="label"> Comentario:</label>
+						<textarea name="comentario"></textarea class="form__field"> 
+					</div>				
+					<label for="acepta" class="label">Querés recibir info sobre nosotros?</label>
+					<input type="checkbox" name="acepta" value="1">
+					<div class="form__buttons">
+						<input type="reset" value="RESETEAR" class="form__btn">
+						<input type="submit" value="ENVIAR" class="form__btn">
+					</div>
+				</form>	
+			</section>
+		</main>
+		<footer id="pepe" class="footer">
+			<hr>
+			<h6>Copyright - todos los derechos reservados</h6>
+			<div class="footer__links">
+				<div class="footer__container">
+					<ul>
+						<li>
+							<h3 class="footer__subtitle">Redes sociales</h3>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/coderhouse/?hl=es" target="_blank"
+								class="footer__link">Instagram</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/coderhouse" target="_blank" class="footer__link">Twitter</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/channel/UCeFRG6700bzqYI0M_9vyelw/videos" target="_blank"
+								class="footer__link">Youtube</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="#"><img src="../assets/img/zapatillas.png" alt="Logo Zapatilla"
+									class="footer__img"></a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<h3 class="footer__subtitle">Contacto</h3>
+						</li>
+						<li>
+							<p>contactoinventado@gmail.com</p>
+						</li>
+						<li>
+							<a href="#" class="footer__link">Acá iría link de whatsapp</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../assets/img/favicon-32x32.png">
+	<title>Trabajo Entregable</title>
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<!-- FONT OSWALD -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+	<div class="container">
+		<header class="header">
+			<img src="../assets/img/zapatillas.png" alt="Logo Zapatilla" class="header__img">
+			<h1 class="header__txt">EMPRESA</h1>
+			<label for="search"></label>
+			<input type="text" id="search" placeholder="Buscador..." class="header__search">
+
+			<ul class="header__nav__menu--right">
+				<li>
+					<a href="#">
+						<i class="fa-solid fa-cart-shopping"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<input type="button" value="MI CUENTA" class="header__myAccount">
+					</a>
+				</li>
+			</ul>
+		</header>
+		<div class="nav__container">
+			<nav class="header__nav">
+				<ul class="header__nav__menu">
+					<li><a href="../index.html">INICIO</a></li>
+					<li><a href="../pages/categorias.html">CATEGORÍAS</a></li>
+					<li><a href="../pages/ofertas.html">OFERTAS</a></li>
+					<li><a href="../pages/contacto.html">CONTACTO</a></li>
+					<li><a href="../pages/ubicacion.html">UBICACIÓN</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<main class="main">
+			<div class="ofertas">
+				<img src="../assets/img/bannerOferta.jpg" alt="Ofertas Banner" class="ofertas__banner">
+				<img src="../assets/img/banner_480.jpg" alt="Ofertas Banner" class="ofertas__banner--mob">
+				<img src="../assets/img/banner2.jpg" alt="Ofertas Banner" class="ofertas__banner--tab">
+			</div>
+			<div class="columns">
+				<div class="sidebar">
+					<ul class="list">
+						<li class="list__item">
+							<div class="list__button">
+								<a href="#" class="list__link">MARCA</a>
+							</div>
+							<ul class="list__show">
+								<li class="list__inside">
+									<a href="#" class="list__link list__link--inside">Adidas</a>
+								</li>
+								<li class="list__inside">
+									<a href="#" class="list__link list__link--inside">Nike</a>
+								</li>
+								<li class="list__inside">
+									<a href="#" class="list__link list__link--inside">Puma</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="list__item">
+							<div class="list__button">
+								<a href="#" class="list__link">GÉNERO</a>
+							</div>
+							<ul class="list__show">
+								<li class="list__inside">
+									<a href="#" class="list__link list__link--inside">Hombre</a>
+								</li>
+								<li class="list__inside">
+									<a href="#" class="list__link list__link--inside">Mujer</a>
+								</li>
+								<li class="list__inside">
+									<a href="#" class="list__link list__link--inside">Niño</a>
+								</li>
+								<li class="list__inside">
+									<a href="#" class="list__link list__link--inside">Niña</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="list__item">
+							<div class="list__button">
+								<a href="#" class="list__link">DISCIPLINA</a>
+							</div>
+							<ul class="list__show">
+								<li class="list__inside">
+									<a href="#" class="list__link list__link--inside">Running</a>
+								</li>
+								<li class="list__inside">
+									<a href="#" class="list__link list__link--inside">Moda</a>
+								</li>
+								<li class="list__inside">
+									<a href="#" class="list__link list__link--inside">Fútbol</a>
+								</li>
+								<li class="list__inside">
+									<a href="#" class="list__link list__link--inside">Outdoor</a>
+								</li>
+								<li class="list__inside">
+									<a href="#" class="list__link list__link--inside">Básquet</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="list__item">
+							<div class="list__button">
+								<a href="#" class="list__link">PRECIO</a>
+							</div>
+							<ul class="list__show">
+								<li class="list__inside">
+									<a href="#" class="list__link list__link--inside">$0 - $5.000</a>
+								</li>
+								<li class="list__inside">
+									<a href="#" class="list__link list__link--inside">$5.000 - $10.000</a>
+								</li>
+								<li class="list__inside">
+									<a href="#" class="list__link list__link--inside">$10.000 - $20.000</a>
+								</li>
+								<li class="list__inside">
+									<a href="#" class="list__link list__link--inside">$20.000 o más</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="column__main">
+					<div class="flex__container">
+						<div class="cardProduct borderRounded">
+							<img src="../assets/img/zapatillas-nike-air-max-sc-mujer-negra-510010cw4554001-1.jpg"
+								alt="Nike Air Max" class="cardProduct__image borderRounded">
+							<div class="cardProduct__description">
+								<strong class="cardProduct__description__price">$ 8.600</strong>
+								<p class="cardProduct__description__text">
+									Zapatillas Nike Air Max SC
+								</p>
+								<a href="#" class="cardProduct__description__action">Comprar</a>
+							</div>
+						</div>
+						<div class="cardProduct borderRounded">
+							<img src="../assets/img/zapatillas-running-adidas-galaxy-5-mujer-gris-100010h04601001-1.jpg"
+								alt="Adidas Galaxy" class="cardProduct__image borderRounded">
+							<div class="cardProduct__description">
+								<strong class="cardProduct__description__price">$ 8.600</strong>
+								<p class="cardProduct__description__text">
+									Zapatillas Adidas Galaxy
+								</p>
+								<a href="#" class="cardProduct__description__action">Comprar</a>
+							</div>
+						</div>
+						<div class="cardProduct borderRounded">
+							<img src="../assets/img/zapatillas-puma-rider-play-on-blanca-640010371149031-1.jpg"
+								alt="Puma Rider" class="cardProduct__image borderRounded">
+							<div class="cardProduct__description">
+								<strong class="cardProduct__description__price">$ 8.600</strong>
+								<p class="cardProduct__description__text">
+									Zapatillas Puma Rider
+								</p>
+								<a href="#" class="cardProduct__description__action">Comprar</a>
+							</div>
+						</div>
+						<div class="cardProduct borderRounded">
+							<img src="../assets/img/zapatillas-nike-air-max-sc-mujer-negra-510010cw4554001-1.jpg"
+								alt="Nike Air Max" class="cardProduct__image borderRounded">
+							<div class="cardProduct__description">
+								<strong class="cardProduct__description__price">$ 8.600</strong>
+								<p class="cardProduct__description__text">
+									Zapatillas Nike Air Max SC
+								</p>
+								<a href="#" class="cardProduct__description__action">Comprar</a>
+							</div>
+						</div>
+						<div class="cardProduct borderRounded">
+							<img src="../assets/img/zapatillas-running-adidas-galaxy-5-mujer-gris-100010h04601001-1.jpg"
+								alt="Adidas Galaxy" class="cardProduct__image borderRounded">
+							<div class="cardProduct__description">
+								<strong class="cardProduct__description__price">$ 8.600</strong>
+								<p class="cardProduct__description__text">
+									Zapatillas Adidas Galaxy
+								</p>
+								<a href="#" class="cardProduct__description__action">Comprar</a>
+							</div>
+						</div>
+						<div class="cardProduct borderRounded">
+							<img src="../assets/img/zapatillas-nike-air-max-sc-mujer-negra-510010cw4554001-1.jpg"
+								alt="Nike Air Max" class="cardProduct__image borderRounded">
+							<div class="cardProduct__description">
+								<strong class="cardProduct__description__price">$ 8.600</strong>
+								<p class="cardProduct__description__text">
+									Zapatillas Nike Air Max SC
+								</p>
+								<a href="#" class="cardProduct__description__action">Comprar</a>
+							</div>
+						</div>
+						<div class="cardProduct borderRounded">
+							<img src="../assets/img/zapatillas-running-adidas-galaxy-5-mujer-gris-100010h04601001-1.jpg"
+								alt="Adidas Galaxy" class="cardProduct__image borderRounded">
+							<div class="cardProduct__description">
+								<strong class="cardProduct__description__price">$ 8.600</strong>
+								<p class="cardProduct__description__text">
+									Zapatillas Adidas Galaxy
+								</p>
+								<a href="#" class="cardProduct__description__action">Comprar</a>
+							</div>
+						</div>
+						<div class="cardProduct borderRounded">
+							<img src="../assets/img/zapatillas-puma-rider-play-on-blanca-640010371149031-1.jpg"
+								alt="Puma Rider" class="cardProduct__image borderRounded">
+							<div class="cardProduct__description">
+								<strong class="cardProduct__description__price">$ 8.600</strong>
+								<p class="cardProduct__description__text">
+									Zapatillas Puma Rider
+								</p>
+								<a href="#" class="cardProduct__description__action">Comprar</a>
+							</div>
+						</div>
+						<div class="cardProduct borderRounded">
+							<img src="../assets/img/zapatillas-nike-air-max-sc-mujer-negra-510010cw4554001-1.jpg"
+								alt="Nike Air Max" class="cardProduct__image borderRounded">
+							<div class="cardProduct__description">
+								<strong class="cardProduct__description__price">$ 8.600</strong>
+								<p class="cardProduct__description__text">
+									Zapatillas Nike Air Max SC
+								</p>
+								<a href="#" class="cardProduct__description__action">Comprar</a>
+							</div>
+						</div>
+						<div class="cardProduct borderRounded">
+							<img src="../assets/img/zapatillas-running-adidas-galaxy-5-mujer-gris-100010h04601001-1.jpg"
+								alt="Adidas Galaxy" class="cardProduct__image borderRounded">
+							<div class="cardProduct__description">
+								<strong class="cardProduct__description__price">$ 8.600</strong>
+								<p class="cardProduct__description__text">
+									Zapatillas Adidas Galaxy
+								</p>
+								<a href="#" class="cardProduct__description__action">Comprar</a>
+							</div>
+						</div>
+						<div class="cardProduct borderRounded">
+							<img src="../assets/img/zapatillas-puma-rider-play-on-blanca-640010371149031-1.jpg"
+								alt="Puma Rider" class="cardProduct__image borderRounded">
+							<div class="cardProduct__description">
+								<strong class="cardProduct__description__price">$ 8.600</strong>
+								<p class="cardProduct__description__text">
+									Zapatillas Puma Rider
+								</p>
+								<a href="#" class="cardProduct__description__action">Comprar</a>
+							</div>
+						</div>
+						<div class="cardProduct borderRounded">
+							<img src="../assets/img/zapatillas-nike-air-max-sc-mujer-negra-510010cw4554001-1.jpg"
+								alt="Nike Air Max" class="cardProduct__image borderRounded">
+							<div class="cardProduct__description">
+								<strong class="cardProduct__description__price">$ 8.600</strong>
+								<p class="cardProduct__description__text">
+									Zapatillas Nike Air Max SC
+								</p>
+								<a href="#" class="cardProduct__description__action">Comprar</a>
+							</div>
+						</div>
+						<div class="cardProduct borderRounded">
+							<img src="../assets/img/zapatillas-running-adidas-galaxy-5-mujer-gris-100010h04601001-1.jpg"
+								alt="Adidas Galaxy" class="cardProduct__image borderRounded">
+							<div class="cardProduct__description">
+								<strong class="cardProduct__description__price">$ 8.600</strong>
+								<p class="cardProduct__description__text">
+									Zapatillas Adidas Galaxy
+								</p>
+								<a href="#" class="cardProduct__description__action">Comprar</a>
+							</div>
+						</div>
+						<div class="cardProduct borderRounded">
+							<img src="../assets/img/zapatillas-puma-rider-play-on-blanca-640010371149031-1.jpg"
+								alt="Puma Rider" class="cardProduct__image borderRounded">
+							<div class="cardProduct__description">
+								<strong class="cardProduct__description__price">$ 8.600</strong>
+								<p class="cardProduct__description__text">
+									Zapatillas Puma Rider
+								</p>
+								<a href="#" class="cardProduct__description__action">Comprar</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer id="pepe" class="footer">
+			<hr>
+			<h6>Copyright - todos los derechos reservados</h6>
+			<div class="footer__links">
+				<div class="footer__container">
+					<ul>
+						<li>
+							<h3 class="footer__subtitle">Redes sociales</h3>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/coderhouse/?hl=es" target="_blank"
+								class="footer__link">Instagram</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/coderhouse" target="_blank" class="footer__link">Twitter</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/channel/UCeFRG6700bzqYI0M_9vyelw/videos" target="_blank"
+								class="footer__link">Youtube</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="#"><img src="../assets/img/zapatillas.png" alt="Logo Zapatilla"
+									class="footer__img"></a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<h3 class="footer__subtitle">Contacto</h3>
+						</li>
+						<li>
+							<p>contactoinventado@gmail.com</p>
+						</li>
+						<li>
+							<a href="#" class="footer__link">Acá iría link de whatsapp</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
