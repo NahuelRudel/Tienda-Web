@@ -131,12 +131,15 @@ ul {
 }
 
 .header__nav ul li a {
+    padding: 10px 5rem;
     color: white;
 }
 
 .header__nav ul li a:hover {
-    border-bottom: 2px solid blueviolet;
-    color:blueviolet;
+    font-size: 2rem;
+    background-color: blueviolet;
+    transition-property: background-color, font-size;
+    transition-duration: 1s;
 }
 
 .header__nav ul.header__nav__menu {
@@ -161,11 +164,6 @@ ul {
     .header__nav ul li {
         padding: 3rem;
         border: 0.5px solid;
-    }
-
-    .header__nav ul li a:hover {
-        border-bottom: 2px solid blueviolet;
-        color:blueviolet;
     }
 }
 
@@ -227,11 +225,14 @@ ul {
 .cardProduct__description__action:hover {
     opacity: 70%;
     background-color: blueviolet;
+    width: 50%;
+    font-size: 1.9rem;
+    transition-property: opacity, background-color, width, font-size;
+    transition-duration: 0.5s;
 }
 
 .borderRounded {
     border-radius: 10px;
-    
 }
 
 .titulos {
@@ -345,7 +346,7 @@ ul {
 }
 
 .list__link--inside:hover {
-    background: #00B2FF;
+    background-color: #00B2FF;
     color:white;
 }
 
@@ -488,6 +489,8 @@ ul {
     border-style: solid;
     border-radius: 10%;
     overflow: hidden;
+    transition-property: border-color;
+    transition-duration: 1s;
 }
 
 @media screen and (max-width: 719px) {
@@ -589,6 +592,13 @@ textarea {
 .form__buttons {
     text-align: center;
     margin-bottom: 10px;
+}
+
+.form__buttons input:hover {
+    background-color: blueviolet;
+    font-size: 1.5rem;
+    transition-property: background-color, font-size;
+    transition-duration: 1s;
 }
 
 @media screen and (max-width: 719px) {
