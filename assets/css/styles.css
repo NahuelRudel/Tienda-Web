@@ -21,6 +21,10 @@ ul {
     list-style: none;
 }
 
+h1 {
+    font-size: 3.5rem;
+}
+
 .container {
     width: 95%;
     min-height: 100vh;
@@ -65,11 +69,13 @@ ul {
 
 .header__nav__menu--right {
     display: flex;
+    margin-top: 15px;
 }
 
 .header__nav__menu--right li {
     padding: 0 20px;
 }
+
 
 @media screen and (max-width: 719px) {
     .container {
@@ -99,8 +105,9 @@ ul {
     }
 
     .header__nav__menu--right {
-         font-size: 2rem;
-         display: block;
+        margin-top: 10px;
+        font-size: 2rem;
+        display: block;
     }
 }
 
@@ -109,61 +116,34 @@ ul {
 .nav__container {
     grid-column: 1/4;
     grid-row: 2/3;
-}
-
-.nav__button {
-    display: none;
-}
-
-.header__nav {
-    background-color: #00B2FF;
     margin-top: 10px;
-    font-weight: 650;
-    font-size: larger  
-} 
-.header__nav ul {
-    display: flex;
 }
 
-.header__nav ul li {
-    padding: 10px;
-    width: 100%;
+.navbar {
+    background-color: #00B2FF;
 }
 
-.header__nav ul li a {
-    padding: 10px 5rem;
-    color: white;
+.nav__link {
+    font-weight: 500;
+    font-size: larger
 }
 
-.header__nav ul li a:hover {
-    font-size: 2rem;
+.nav__link:hover {
+    font-size: 2.2rem;
     background-color: blueviolet;
     transition-property: background-color, font-size;
     transition-duration: 1s;
 }
 
-.header__nav ul.header__nav__menu {
-    font-weight: 500;
-    width: 100%;
-    text-align: center;
-}
-
-@media screen and (max-width: 719px) {
-    .nav__container {
-        grid-column: 1/3;
-        grid-row: 2/4;
-        position: relative;
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: center;
+        padding: 5px;
         width: 100%;
-        height: 45.5rem;
     }
-    
-    .header__nav ul {
-        flex-direction: column;
-    }
-    
-    .header__nav ul li {
-        padding: 3rem;
-        border: 0.5px solid;
+
+    .nav-item {
+        padding: 0 5rem;
     }
 }
 
@@ -223,6 +203,7 @@ ul {
 }
 
 .cardProduct__description__action:hover {
+    color: #ffff;
     opacity: 70%;
     background-color: blueviolet;
     width: 50%;
@@ -401,60 +382,8 @@ ul {
 
 /* EMPIEZA OFERTAS */
 
-.ofertas {
-    height: 400px;
-    margin-top: 5px;
-}
-
-.ofertas__banner {
-    width: 100%;
-    height: 100%;  
-}
-
-.ofertas__banner--mob {
-    display: none;
-}
-
-.ofertas__banner--tab {
-    display: none;
-}
-
-@media screen and (max-width: 480px) {
-    .ofertas {
-        height: 220px;
-        margin-top: 5px;
-    }
-
-    .ofertas__banner {
-        display: none; 
-    }
-
-    .ofertas__banner--tab {
-        display: none;
-    }
-
-    .ofertas__banner--mob {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-}
-
-@media screen and (min-width: 481px) and (max-width: 719px) {
-    .ofertas {
-        height: 300px;
-        margin-top: 5px;
-    }
-    
-    .ofertas__banner {
-        display: none; 
-    }
-
-    .ofertas__banner--tab {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
+.carousel-inner {
+    margin: 2rem 0 1rem 0;
 }
 
 /* EMPIEZA UBICACION */
@@ -495,7 +424,7 @@ ul {
 
 @media screen and (max-width: 719px) {
     .main__ubic {
-        grid-row: 2/4;
+        grid-row: 3/4;
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
@@ -528,9 +457,13 @@ ul {
 .label {
     box-sizing: content-box;
     float: none;
-    width: auto;
+    width: 100%;
     text-align: left;
     padding: 0;
+}
+
+.label__check {
+    width: 100%;
 }
 
 .form__field {
@@ -603,7 +536,7 @@ textarea {
 
 @media screen and (max-width: 719px) {
     .main__form {
-        grid-row: 2/4;
+        grid-row: 3/4;
     }
 
     .form__field--left {
