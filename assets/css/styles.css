@@ -107,9 +107,18 @@ h1 {
     }
 
     .header__nav__menu--right {
-        margin-top: 10px;
-        font-size: 2rem;
+        margin-top: 7px;
+        font-size: 2.7rem;
         display: block;
+        padding: 0 10px 0 0;
+    }
+
+    .header__nav__menu--right li {
+        padding: 0 0;
+    }
+
+    .header__img {
+        width: 65px;
     }
 }
 
@@ -318,6 +327,17 @@ h1 {
         grid-column: 1/2;
     }
     
+    .footer__links {
+        padding: 10px 0;
+    }
+    
+    .footer__container {
+        grid-template-columns: 100%;
+    }
+     
+    .footer__img {
+        display: none;
+    }
 }
 
 /* EMPIEZA CATEGORÍAS */
