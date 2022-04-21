@@ -80,9 +80,11 @@ h1 {
 @media screen and (max-width: 719px) {
     .container {
         grid-template-rows: auto 2fr auto;
+        grid-template-columns: 100%;
     }
     
     .header {
+        grid-column: 1/2;
         justify-content: center;
         height: 50px;
         font-size: 1.5rem;
@@ -135,6 +137,12 @@ h1 {
     transition-duration: 1s;
 }
 
+@media screen and (max-width: 719px) {
+    .nav__container {
+        grid-column: 1/2;
+    }
+}
+
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
         justify-content: center;
@@ -152,6 +160,13 @@ h1 {
     grid-column: 1/4;
     grid-row: 3/4;
 }
+
+@media screen and (max-width: 719px) {
+    .main {
+        grid-column: 1/2;
+    }
+}
+
 /* CARDS */
 
 .flex__container {
@@ -298,6 +313,13 @@ h1 {
     height: 80px;
 }
 
+@media screen and (max-width: 719px) {
+    .footer {
+        grid-column: 1/2;
+    }
+    
+}
+
 /* EMPIEZA CATEGORÍAS */
 
 .columns {
@@ -424,6 +446,7 @@ h1 {
 
 @media screen and (max-width: 719px) {
     .main__ubic {
+        grid-column: 1/2;
         grid-row: 3/4;
         display: flex;
         flex-direction: column;
@@ -536,6 +559,7 @@ textarea {
 
 @media screen and (max-width: 719px) {
     .main__form {
+        grid-column: 1/2;
         grid-row: 3/4;
     }
 
