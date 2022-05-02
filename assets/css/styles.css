@@ -1,4 +1,31 @@
 @charset "UTF-8";
+.letraChica {
+  font-size: 1rem;
+  font-weight: 100; }
+
+.letraMediana {
+  font-size: 2rem;
+  font-weight: 200; }
+
+.letraGrande {
+  font-size: 4rem;
+  font-weight: 200; }
+
+.botonInstagram {
+  color: #E1306C; }
+
+.botonTwitter {
+  color: #00acee; }
+
+.botonYoutube {
+  color: #c4302b; }
+
+.botonMail {
+  color: #D14336; }
+
+.botonWhatsapp {
+  color: #25D366; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -153,7 +180,7 @@ h1 {
     margin-bottom: 20px;
     text-align: justify;
     line-height: 20px; }
-  .cardProduct__description__action {
+  .cardProduct__description__action, .botonOfertas {
     background-color: #00B2FF;
     display: inline-block;
     width: 40%;
@@ -163,7 +190,7 @@ h1 {
     color: white;
     text-align: center;
     border-radius: 50px; }
-    .cardProduct__description__action:hover {
+    .cardProduct__description__action:hover, .botonOfertas:hover {
       color: #ffff;
       opacity: 70%;
       background-color: blueviolet;
@@ -172,16 +199,21 @@ h1 {
       transition-property: opacity, background-color, width, font-size;
       transition-duration: 0.5s; }
 
+.botonOfertas:hover {
+  background-color: #f91818;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  opacity: 80%;
+  width: 60%; }
+
 .borderRounded {
   border-radius: 10px; }
 
 .titulos {
   display: block;
   text-align: center;
-  font-size: xx-large;
   margin: 25px 0;
-  color: #5a5a5a;
-  font-weight: 100; }
+  color: #5a5a5a; }
 
 .brandWork__image {
   width: 150px;
@@ -231,14 +263,14 @@ h1 {
       .footer__container ul li {
         text-align: center; }
   .footer__link {
-    color: black; }
+    font-size: 2.4rem; }
     .footer__link:hover {
       opacity: 70%;
       border-bottom: 2px solid #00B2FF; }
   .footer__subtitle {
     font-size: large; }
   .footer__img {
-    height: 80px; }
+    height: 90px; }
 
 @media screen and (max-width: 719px) {
   .footer {

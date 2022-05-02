@@ -1,4 +1,6 @@
-@import "variables";
+@import "./variables";
+@import "./mixins";
+@import "./maps";
 
 * {
     box-sizing: border-box;
@@ -237,6 +239,18 @@ h1 {
     }
 }
 
+.botonOfertas {
+    @extend .cardProduct__description__action;
+    
+    &:hover {
+        background-color: $offer-color;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        opacity: 80%;
+        width: 60%;
+    }
+}
+
 .borderRounded {
     border-radius: 10px;
 }
@@ -244,10 +258,8 @@ h1 {
 .titulos {
     display: block;
     text-align: center;
-    font-size:xx-large;
     margin: 25px 0;
     color: $titles-color;
-    font-weight: 100;
 }
 
 .brandWork__image {
@@ -315,7 +327,7 @@ h1 {
     }
 
     &__link {
-        color: black;
+        font-size: 2.4rem;
 
         &:hover {
             opacity: 70%;
@@ -328,7 +340,7 @@ h1 {
     }
 
     &__img {
-        height: 80px;
+        height: 90px;
     }
 }
 

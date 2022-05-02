@@ -1,0 +1,27 @@
+$redes: (
+    Instagram:#E1306C,
+    Twitter: #00acee,
+    Youtube: #c4302b,
+    Mail: #D14336,
+    Whatsapp: #25D366,
+);
+
+.botonInstagram {
+    color: map-get($redes, Instagram);
+}
+
+.botonTwitter {
+    color: map-get($redes, Twitter);
+}
+
+.botonYoutube {
+    color: map-get($redes, Youtube);
+}
+
+.botonMail {
+    color: map-get($redes, Mail);
+}
+
+.botonWhatsapp {
+    color: map-get($redes, Whatsapp);
+}
