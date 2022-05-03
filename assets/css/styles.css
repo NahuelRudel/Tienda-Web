@@ -171,6 +171,11 @@ h1 {
     height: 50%;
     width: 100%;
     object-fit: cover; }
+    .cardProduct__image:hover {
+      width: 97%;
+      opacity: 90%;
+      transition-property: width, opacity;
+      transition-duration: 0.3s; }
   .cardProduct__description {
     padding: 10px; }
   .cardProduct__description__price {
@@ -244,7 +249,7 @@ h1 {
   display: block;
   border-top: 5px blueviolet;
   bottom: 0; }
-  .footer h6 {
+  .footer h3 {
     font-size: 1.4rem;
     text-align: center;
     color: #5a5a5a;
@@ -330,6 +335,12 @@ h1 {
     width: 80%;
     margin-left: auto;
     border-left: 2px solid #a8a5a5; }
+
+.tituloPages {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #5a5a5a; }
 
 @media screen and (max-width: 719px) {
   .columns {

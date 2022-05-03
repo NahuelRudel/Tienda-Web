@@ -198,7 +198,14 @@ h1 {
     &__image {
         height: 50%;
         width: 100%;
-        object-fit: cover
+        object-fit: cover;
+
+        &:hover {
+            width: 97%;
+            opacity: 90%;
+            transition-property: width, opacity;
+            transition-duration: 0.3s;
+        }
     }
     
     &__description {
@@ -298,7 +305,7 @@ h1 {
     border-top: 5px $secondary-color;
     bottom: 0;
 
-    h6 {
+    h3 {
         font-size: 1.4rem;
         text-align: center;
         color: $titles-color;
@@ -429,6 +436,14 @@ h1 {
         border-left: 2px solid $borders-color;
     }
 }
+
+.tituloPages {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    color: $titles-color;
+}
+
 
 @media screen and (max-width: 719px) {
     .columns {
