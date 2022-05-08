@@ -348,11 +348,17 @@ h1 {
   .column__main {
     width: 70%; }
   .sidebar {
-    width: 30%; } }
+    width: 30%; }
+  .tituloPages {
+    display: none; } }
 
 /* EMPIEZA OFERTAS */
 .carousel-inner {
   margin: 2rem 0 1rem 0; }
+
+.price__offer {
+  margin-left: 5px;
+  color: #a8a5a5; }
 
 /* EMPIEZA UBICACION */
 .main__ubic {
@@ -484,5 +490,5 @@ textarea {
     padding-left: 0;
     clear: right; }
   .form__btn {
-    margin: 20px 15px;
-    width: 30%; } }
+    margin: 20px 5px;
+    width: 40%; } }

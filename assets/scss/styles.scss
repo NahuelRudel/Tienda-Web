@@ -444,7 +444,6 @@ h1 {
     color: $titles-color;
 }
 
-
 @media screen and (max-width: 719px) {
     .columns {
         padding-top: 10px;
@@ -457,12 +456,21 @@ h1 {
     .sidebar {
         width: 30%;
     }
+
+    .tituloPages {
+        display: none;
+    }
 }
 
 /* EMPIEZA OFERTAS */
 
 .carousel-inner {
     margin: 2rem 0 1rem 0;
+}
+
+.price__offer {
+    margin-left: 5px;
+    color: $borders-color;
 }
 
 /* EMPIEZA UBICACION */
@@ -636,7 +644,7 @@ textarea {
     }
 
     .form__btn {
-        margin: 20px 15px;
-        width: 30%
+        margin: 20px 5px;
+        width: 40%
     }   
 }
