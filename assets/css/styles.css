@@ -205,8 +205,7 @@ h1 {
       transition-duration: 0.5s; }
 
 .botonOfertas:hover {
-  background-color: #f91818;
-  text-transform: uppercase;
+  background-color: #E5461C;
   font-size: 1.7rem;
   opacity: 80%;
   width: 60%; }
