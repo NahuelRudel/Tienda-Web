@@ -140,9 +140,11 @@ h1 {
 .nav__link {
     font-weight: 500;
     font-size: larger;
+}
 
+.nav-item {
     &:hover {
-        font-size: 2.2rem; 
+        font-size: 1.8rem; 
         background-color: $secondary-color;
         transition-property: background-color, font-size;
         transition-duration: 1s;
@@ -195,16 +197,27 @@ h1 {
     border-width: 3px;
     margin: 5px;
 
+    &--offer {
+        @extend .cardProduct;
+
+        &:hover {
+            border-width: 2.5px;
+            border-top: 3px groove $primary-color ;  
+            transition-property: border-width, border-top;
+            transition-duration: 0.5s;
+        }
+    }
+
     &__image {
         height: 50%;
         width: 100%;
         object-fit: cover;
 
         &:hover {
-            width: 97%;
-            opacity: 90%;
-            transition-property: width, opacity;
-            transition-duration: 0.3s;
+            width: 105%;
+            transition-property: width;
+            transition-duration: 0.3s; 
+            cursor: pointer;    
         }
     }
     
@@ -348,6 +361,10 @@ h1 {
     &__img {
         height: 90px;
     }
+}
+
+hr {
+    margin: 0;
 }
 
 @media screen and (max-width: 719px) {
@@ -507,8 +524,6 @@ h1 {
         transition-duration: 1s;
     }
 }
-
-
 
 @media screen and (max-width: 719px) {
     .main__ubic {

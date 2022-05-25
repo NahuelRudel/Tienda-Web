@@ -127,11 +127,12 @@ h1 {
 .nav__link {
   font-weight: 500;
   font-size: larger; }
-  .nav__link:hover {
-    font-size: 2.2rem;
-    background-color: blueviolet;
-    transition-property: background-color, font-size;
-    transition-duration: 1s; }
+
+.nav-item:hover {
+  font-size: 1.8rem;
+  background-color: blueviolet;
+  transition-property: background-color, font-size;
+  transition-duration: 1s; }
 
 @media screen and (max-width: 719px) {
   .nav__container {
@@ -160,22 +161,27 @@ h1 {
   flex-flow: row wrap;
   justify-content: center; }
 
-.cardProduct {
+.cardProduct, .cardProduct--offer {
   width: 200px;
   height: 300px;
   border-color: #a8a5a5;
   border-style: solid;
   border-width: 3px;
   margin: 5px; }
+  .cardProduct--offer:hover {
+    border-width: 2.5px;
+    border-top: 3px groove #00B2FF;
+    transition-property: border-width, border-top;
+    transition-duration: 0.5s; }
   .cardProduct__image {
     height: 50%;
     width: 100%;
     object-fit: cover; }
     .cardProduct__image:hover {
-      width: 97%;
-      opacity: 90%;
-      transition-property: width, opacity;
-      transition-duration: 0.3s; }
+      width: 105%;
+      transition-property: width;
+      transition-duration: 0.3s;
+      cursor: pointer; }
   .cardProduct__description {
     padding: 10px; }
   .cardProduct__description__price {
@@ -275,6 +281,9 @@ h1 {
     font-size: large; }
   .footer__img {
     height: 90px; }
+
+hr {
+  margin: 0; }
 
 @media screen and (max-width: 719px) {
   .footer {
